@@ -1,0 +1,5 @@
+<h1> This is the index view </h1>
+<% @coupons.each do |c| %>
+<%= link_to c.coupon_code, coupon_path(c) %>
+<%= c.store %><br>
+<% end %>
